@@ -4,8 +4,12 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.klemba.belchowcity.R
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.observeOn
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MeetingActivity : AppCompatActivity() {
@@ -18,7 +22,9 @@ class MeetingActivity : AppCompatActivity() {
         observeViewModel()
     }
 
-    private fun observeViewModel() {
-        findViewById<TextView>(R.id.meetingName).text = viewModel.meetingName
+    private fun observeViewModel() = lifecycleScope.launch {
+        viewModel.meetingName.collect { meetingName ->
+            findViewById<TextView>(R.id.meetingName).text = meetingName
+        }
     }
 }
