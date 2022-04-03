@@ -3,10 +3,12 @@
     package="com.klemba.belchowcity">
 
     <application
+
+        android:name=".BelchowCityApplication"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <activity
-            android:name="com.klemba.belchowcity.MeetingActivity"
+            android:name="com.klemba.belchowcity.meeting.view.MeetingActivity"
             android:exported="true">
 
             <intent-filter>
