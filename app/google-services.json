@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "135893000033",
+    "project_id": "belchowcity",
+    "storage_bucket": "belchowcity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135893000033:android:d282e09dd028a381066f20",
+        "android_client_info": {
+          "package_name": "com.klemba.belchowcity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135893000033-8pr6ava2rre8qkhgu1cmjt3rgu9r0k4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtbUloj0nlm93ihLRgoi39xm6cBI59am0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135893000033-8pr6ava2rre8qkhgu1cmjt3rgu9r0k4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
